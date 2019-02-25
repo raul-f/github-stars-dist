@@ -30,8 +30,7 @@ passport.use(
 		{
 			clientID: process.env.GITHUB_CLIENT_ID,
 			clientSecret: process.env.GITHUB_CLIENT_SECRET,
-			callbackURL:
-				'http://https://github-stars.glitch.me//auth/github/callback',
+			callbackURL: 'https://github-stars.glitch.me//auth/github/callback',
 		},
 		function(accessToken, refreshToken, profile, cb) {
 			userProfile.profile = profile
